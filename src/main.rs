@@ -89,7 +89,7 @@ fn main() {
             match process.kill_with(signal_obj) {
                 Some(b) => {
                     if b {
-                        println!("Killed");
+                        println!("Signal sent");
                         continue;
                     } else {
                         println!("Failed to kill, trying SIGKILL");
@@ -103,7 +103,7 @@ fn main() {
             // failed to kill with specified signal, try to kill with SIGKILL
             match process.kill() {
                 true => {
-                    println!("Killed");
+                    println!("Signal sent");
                 }
                 false => {
                     println!("Failed to kill, even with SIGKILL");
