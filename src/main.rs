@@ -25,10 +25,10 @@ fn get_pids(port: u16) -> Vec<u32> {
 }
 
 fn main() {
-    // usage: shut <port>
+    // usage: close <port>
     let args: Vec<String> = std::env::args().collect();
     if args.len() != 2  && args.len() != 3 {
-        println!("Usage: shut <port> (<signal>)");
+        println!("Usage: close <port> (<signal>)");
         return;
     }
 

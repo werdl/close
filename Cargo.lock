@@ -157,7 +157,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "shut"
+name = "close"
 version = "0.1.0"
 dependencies = [
  "netstat2",
